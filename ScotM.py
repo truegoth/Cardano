@@ -137,7 +137,7 @@ from numpy import array
 lst_output=[]
 n_steps=100
 i=0
-while(i<2):
+while(i<5):
     
     if(len(temp_input)>100):
         #print(temp_input)
@@ -176,7 +176,7 @@ day_pred=np.arange(101,102)
 ##See all the predictions
 predictions=pd.DataFrame(scaler.inverse_transform(lst_output))
 predictions.columns=['Close']
-predictions['Date'] = pd.date_range(start='8/17/2022', periods=len(predictions), freq='D')
+predictions['Date'] = pd.date_range(start='8/12/2022', periods=len(predictions), freq='D')
 predictions
 
 
