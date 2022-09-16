@@ -176,7 +176,7 @@ day_pred=np.arange(101,102)
 ##See all the predictions
 predictions=pd.DataFrame(scaler.inverse_transform(lst_output))
 predictions.columns=['Close']
-predictions['Date'] = pd.date_range(start='8/15/2021', periods=len(predictions), freq='D')
+predictions['Date'] = pd.date_range(start='8/17/2021', periods=len(predictions), freq='D')
 predictions
 
 
