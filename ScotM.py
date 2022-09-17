@@ -37,7 +37,7 @@ plt.show()
 #############ModelOne###
 ###Fetching the Data
 tickers= ['ADA-USD']
-df=yf.download(tickers,start="2014-1-1", end='2022-12-31')
+df=yf.download(tickers,start="2014-1-1", end='2022-9-15')
 df1=df['Close']
 
 ########2
@@ -176,7 +176,7 @@ day_pred=np.arange(101,102)
 ##See all the predictions
 predictions=pd.DataFrame(scaler.inverse_transform(lst_output))
 predictions.columns=['Close']
-predictions['Date'] = pd.date_range(start='8/12/2022', periods=len(predictions), freq='D')
+predictions['Date'] = pd.date_range(start='9/15/2022', periods=len(predictions), freq='D')
 predictions
 
 
